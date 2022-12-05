@@ -10,7 +10,6 @@ from math import *
 from pygame import *
 
 class Node(object):
-
     def __init__(
         self,
         point,
@@ -143,7 +142,6 @@ def main():
                     for p in nodes:
 
                         # if manhattan_dist(p.point, goalPoint.point) - dist(p.point,rand) <= manhattan_dist(parentNode.point, goalPoint.point) - dist(parentNode.point,rand):
-
                         if manhattan_dist(p.point, goalPoint.point) \
                             <= manhattan_dist(parentNode.point,
                                 goalPoint.point):
@@ -164,7 +162,6 @@ def main():
 
                     goalNode = nodes[len(nodes) - 1]
             else:
-
                 print('Ran out of nodes... :(')
                 return
 
